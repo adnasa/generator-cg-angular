@@ -1,4 +1,4 @@
-angular.module('<%= appname %>').factory('<%= _.camelize(name) %>',function() {
+angular.module('<%= appname %>').service('<%= _.camelize(name) %>',function() {
 
 	var <%= _.camelize(name) %> = {};
 
