@@ -8,12 +8,12 @@ var CgangularGenerator = module.exports = function CgangularGenerator(args, opti
     yeoman.generators.Base.apply(this, arguments);
 
     this.on('end', function () {
-        this.config.set('directiveDirectory' , 'directives/');
-        this.config.set('filterDirectory'    , 'filters/');
-        this.config.set('modalDirectory'     , 'modals/');
-        this.config.set('moduleDirectory'    , 'modules/');
-        this.config.set('partialDirectory'   , 'partials/');
-        this.config.set('serviceDirectory'   , 'services/');
+        this.config.set('directiveDirectory' , 'application/directive/');
+        this.config.set('filterDirectory'    , 'application/filter/');
+        this.config.set('modalDirectory'     , 'application/modal/');
+        this.config.set('moduleDirectory'    , 'application/module/');
+        this.config.set('partialDirectory'   , 'application/partial/');
+        this.config.set('serviceDirectory'   , 'application/service/');
 
         var inject = {
             js: {
